@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git://github.com/ftlabs/ftscroller.git"
   },
+  "scripts": {
+    "start": "webpack lib/build.js --output-file=dist/ftscroller.js && webpack lib/build.js --optimize-minimize --output-file=dist/ftscroller.min.js"
+  },
   "keywords": [
     "scroller",
     "scrolling",
@@ -18,5 +21,8 @@
     "mobile"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/ftlabs/ftscroller"
+  "homepage": "https://github.com/ftlabs/ftscroller",
+  "devDependencies": {
+    "webpack": "^1.3.3-beta2"
+  }
 }
